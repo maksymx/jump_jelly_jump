@@ -4,9 +4,7 @@ using UnityEngine;
 
 public class Player:MonoBehaviour {
 	public float jumpheight;
-	float angle = 0;
-    int xSpeed = 3;
-    int ySpeed = 2;
+    int ySpeed = 10;
 
 	bool isDead = false;
 
@@ -27,17 +25,8 @@ public class Player:MonoBehaviour {
 	}
 	// Update is called once per frame
 	void Update () {
-		// movePlayer();
 		getInput();
 	}
-
-	void movePlayer() {
-		Vector2 pos = transform.position;
-		pos.x = Mathf.Cos(angle) * 3;
-		// pos.y = 0;
-		transform.position = pos;
-		angle += Time.deltaTime * xSpeed;
-    }
 
 	void getInput() {
 		if (Input.GetKeyDown(KeyCode.Space)) {
