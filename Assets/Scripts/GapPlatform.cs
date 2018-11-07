@@ -19,6 +19,6 @@ public class GapPlatform:MonoBehaviour {
 
 	void OnBecameInvisible() {
 		Debug.Log("Invisible man");
-         Destroy(gameObject);
+        Destroy(gameObject);
     }
 }

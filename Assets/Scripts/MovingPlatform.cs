@@ -18,7 +18,7 @@ public class MovingPlatform : MonoBehaviour {
 
 	void movePlatform() {
 		Vector2 pos = transform.position;
-		pos.x = Mathf.Cos(angle) * 2;
+		pos.x = Mathf.Cos(angle) * 1.5f;
 		// pos.y = 0;
 		transform.position = pos;
 		angle += Time.deltaTime * xSpeed;

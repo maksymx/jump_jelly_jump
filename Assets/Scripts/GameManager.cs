@@ -14,14 +14,14 @@ public class GameManager:MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		currentScore = 0;
-		bestScoreText.text = PlayerPrefs.GetInt("BestScore").ToString();
-		SetScore();
+		// currentScore = 0;
+		// bestScoreText.text = PlayerPrefs.GetInt("BestScore").ToString();
+		// SetScore();
 	}
 
 	// Update is called once per frame
 	void Update () {
-
+		// Debug.Log("OLOLOLO!!!");
 	}
 
 	public void CallGameOver() {
